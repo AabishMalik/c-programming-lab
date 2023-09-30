@@ -1,3 +1,8 @@
+// Pragoram 2.2
+//
+// Area of a circle, square and rectangle
+
+
 #include <stdio.h>
 #include <math.h>
 
