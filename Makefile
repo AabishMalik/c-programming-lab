@@ -1,11 +1,11 @@
 BUILD_DIR = ./bin
 SOURCE_DIR = ./src
-SOURCES= $(wildcard $(SOURCE_DIR)/*.c)
+SOURCES = $(wildcard $(SOURCE_DIR)/*.c)
 
 BINS = $(patsubst  %.c,%.out, $(patsubst $(SOURCE_DIR)/%,$(BUILD_DIR)/%, $(SOURCES)))
 
 CC_FLAGS := 
-CC:= gcc
+CC := gcc
 
 CC_FLAGS += -lm
 
