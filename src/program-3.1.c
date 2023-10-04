@@ -1,4 +1,4 @@
-// Program 3.1
+// Program 4.1
 //
 // Check if a number is odd or even
 

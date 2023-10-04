@@ -1,3 +1,8 @@
+// Program 3
+//
+// Program to calculate the euciledian distance between two points
+
+
 #include <stdio.h>
 #include <math.h>
 
