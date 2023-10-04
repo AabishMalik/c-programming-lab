@@ -1,4 +1,4 @@
-// Program 3
+// Program 2.3
 //
 // Program to calculate the euciledian distance between two points
 

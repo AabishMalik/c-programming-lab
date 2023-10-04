@@ -2,9 +2,10 @@ BUILD_DIR = ./bin
 SOURCE_DIR = ./src
 SOURCES = $(wildcard $(SOURCE_DIR)/*.c)
 
-BINS = $(patsubst  %.c,%.out, $(patsubst $(SOURCE_DIR)/%,$(BUILD_DIR)/%, $(SOURCES)))
+BINS = $(patsubst  %.c,%, $(patsubst $(SOURCE_DIR)/%,$(BUILD_DIR)/%, $(SOURCES)))
 
 CC_FLAGS := 
+
 CC := gcc
 
 CC_FLAGS += -lm
@@ -26,6 +27,6 @@ clean:
 		rm -rf $(BUILD_DIR); \
 	fi
 
-$(BUILD_DIR)/%.out: $(SOURCE_DIR)/%.c 
+$(BUILD_DIR)/%: $(SOURCE_DIR)/%.c 
 	@echo CC $@
-	@gcc $(CC_FLAGS) $< -o $@
+	@$(CC) $(CC_FLAGS) $< -o $@
