@@ -8,7 +8,7 @@ CC_FLAGS :=
 
 CC := gcc
 
-CC_FLAGS += -lm
+CC_FLAGS += -lm -Os
 
 .PHONY: all setup  clean
 
