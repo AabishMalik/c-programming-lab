@@ -1,10 +1,9 @@
-// Program x.x
+// Program 4.3
 //
-// Title
+// Maximum if n numbers using for loop
 
 
 #include <stdio.h>
-#include <math.h>
 
 int main(){
     

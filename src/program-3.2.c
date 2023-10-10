@@ -1,4 +1,4 @@
-// Pragoram 3.2
+// Program 3.2
 //
 // Check whether a character is a vowel or a consonant
 

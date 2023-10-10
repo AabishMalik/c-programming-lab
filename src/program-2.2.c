@@ -1,4 +1,4 @@
-// Pragoram 2.2
+// Program 2.2
 //
 // Area of a circle, square and rectangle
 

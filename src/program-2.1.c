@@ -1,4 +1,4 @@
-// Pragoram 2.1
+// Program 2.1
 //
 // Basic Arithmetic operators
 
