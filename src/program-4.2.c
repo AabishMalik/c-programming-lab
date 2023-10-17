@@ -10,15 +10,14 @@ int main(){
     printf("Enter number: ");
     scanf("\n%d", &num);
 
-    int prev=0, curr=1, next=1;
-    printf("0\n1\n");
-
+    int prev=0, curr=0, next=1;
+    
     for (int i=1; i <= num; i++){
-        printf("%d\n", prev+curr);
-        
-        next = prev+curr;
+        printf("%d\n", curr);
+
         prev = curr;
         curr = next;
+        next = prev + curr;
     }
     return 0;
 }
