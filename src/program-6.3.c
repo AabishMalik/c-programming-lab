@@ -1,6 +1,6 @@
 // Program 6.3
 //
-// Sorting an array using linear sort
+// Searching an array using linear search
 
 
 #include <stdio.h>
@@ -8,28 +8,24 @@
 int main(){
     int arr[] = {12,44,231,-99,124,13,321};
     int len = sizeof(arr)/sizeof(int);
-    printf("Array before sorting: [");
+    printf("Array: [");
     for (int i=0; i<len-1; i++){
-        printf("%d, ", arr[i]);
+        printf("%d%s", arr[i], (i<len-2)?" ": "" );
     }
-    printf("%d]\n", arr[len-1]);
+    printf("%d]\n", arr[len-1]);  
     
-    for (int i=0;i<len-1;i++){
-        for (int j=i+1; j<len;j++){
-            if (arr[i] > arr[j]){
-                int c = arr[i];
-                arr[i] = arr[j];
-                arr[j] = c;
-            }
+    int idx = -1;
+    int val;
+    printf("Enter value to search: ");
+    scanf("\n%d", &val);
+    for (int i=0;i<len;i++){
+        if (arr[i] == val){
+            idx = i;
+            break;
         }
     }
     
-    printf("Array after sorting: [");
-    for (int i=0; i<len-1; i++){
-        printf("%d, ", arr[i]);
-    }
-    printf("%d]\n", arr[len-1]);
-
-
+    if(idx ==-1) printf("Value %d is located at index %d", val,idx);
+    else printf("Value %d is not located in the array", val);
     return 0;
 }
