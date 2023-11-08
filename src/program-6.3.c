@@ -25,7 +25,7 @@ int main(){
         }
     }
     
-    if(idx ==-1) printf("Value %d is located at index %d", val,idx);
-    else printf("Value %d is not located in the array", val);
+    if(idx != -1) printf("Value %d is located at index %d\n", val,idx);
+    else printf("Value %d is not located in the array\n", val);
     return 0;
 }
