@@ -6,13 +6,13 @@
 #include <stdio.h>
 
 int main(){
-    int arr[] = {12,44,231,-99,124,13,321};
+    int arr[] = {23,33,12,45,7,11,87,01};
     int len = sizeof(arr)/sizeof(int);
     printf("Array: [");
-    for (int i=0; i<len-1; i++){
-        printf("%d%s", arr[i], (i<len-2)?" ": "" );
+    for (int i=0; i<len; i++){
+        printf("%d%s", arr[i], (i<len-1)?" ": "" );
     }
-    printf("%d]\n", arr[len-1]);  
+    printf("]\n");  
     
     int idx = -1;
     int val;
