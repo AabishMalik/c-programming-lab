@@ -6,9 +6,9 @@ BINS = $(patsubst  %.c,%, $(patsubst $(SOURCE_DIR)/%,$(BUILD_DIR)/%, $(SOURCES))
 
 CC_FLAGS := 
 
-CC := gcc
+CC := x86_64-w64-mingw32-gcc
 
-CC_FLAGS += -lm -Os
+CC_FLAGS += -std=c17 -lm  -Os
 
 .PHONY: all setup  clean
 
