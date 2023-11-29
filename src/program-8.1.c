@@ -5,14 +5,13 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
 
 int main(){
     char str1[20] = "Hello";
     char *str2 = ", World!";
     int len1 = strlen(str1);
     int len2 = strlen(str2);
-
+        
     printf("Strings: %s %s\nLength %d %d \n", str1, str2, len1, len2);
     strcat(str1, str2);
     printf("Concatinated string: %s\n", str1);

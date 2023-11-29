@@ -4,7 +4,6 @@
 
 #include <stdio.h>
 
-
 int fib(int n){
     if(n == 0 || n == 1)
         return n;
@@ -14,15 +13,20 @@ int fib(int n){
 }
 
 void printfib(int n){
-    for(int i = 0; i < n; i++)
-        printf("%d ", fib(i));
-    printf("\n");
+    if (n == 0 || n == 1 ){
+        printf("%d ", n);
+    }
+    else {
+        printfib(n-1);
+        printf("%d ", fib(n));
+    }
 }
 
 int main(){
     int n;
     printf("Enter the number of terms: ");
     scanf("\n%d", &n);
-    printfib(n); 
+    printfib(n);
+    printf("\n");
     return 0;
 }

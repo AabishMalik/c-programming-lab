@@ -4,7 +4,6 @@
 
 
 #include <stdio.h>
-#include <math.h>
 
 int main(){
     int a, b;
@@ -28,9 +27,6 @@ int main(){
             break;
         case '%':
             printf("The remainder is %d\n", a%b);
-            break;
-        case '^':
-            printf("The power is %d\n", (int)pow(a, b));
             break;
         default:
             printf("Invalid operator\n");
