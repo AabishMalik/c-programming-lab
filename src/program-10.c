@@ -1,8 +1,6 @@
 // Program 10
 //
 // Program to differentiate between pass by value and pass by reference by swapping value
-
-
 #include <stdio.h>
 
 void swap_reference(int *a, int *b){
