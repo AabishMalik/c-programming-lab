@@ -7,15 +7,15 @@
 #include <math.h>
 
 int main(){
-    int num;
-    printf("Enter number: ");
-    scanf("\n%d",&num);
-    
-    if (num % 2 == 0){
-        printf("%d is even\n", num);
-    }else{
-        printf("%d is odd\n", num);
-    }
+	int num;
+	printf("Enter number: ");
+	scanf("\n%d",&num);
+	
+	if (num % 2 == 0){
+		printf("%d is even\n", num);
+	}else{
+		printf("%d is odd\n", num);
+	}
 
-    return 0;
+	return 0;
 }
